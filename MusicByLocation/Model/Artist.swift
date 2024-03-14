@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Artist: Codable {
+    var name: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case name = "artistName"
+    }
+}
